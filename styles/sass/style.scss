@@ -1,5 +1,13 @@
 @import "setup";
 
+@mixin buttonText {
+  font-family: "Kumar One", cursive;
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .wrapper {
   width: 80%;
   margin: auto;
@@ -80,6 +88,13 @@
       font-family: "Lato", sans-serif;
       font-size: 1.25rem;
       width: 90%;
+    }
+    a {
+      background-color: #065635;
+      color: white;
+      padding: 20px 25px;
+      display: inline-block;
+      @include buttonText;
     }
   }
   img {
@@ -174,6 +189,13 @@
           text-transform: uppercase;
           font-size: 2.0625rem;
         }
+        a {
+          background-color: #065635;
+          color: white;
+          padding: 20px 25px;
+          display: inline-block;
+          @include buttonText;
+        }
       }
     }
     .inner-div2 {
@@ -198,36 +220,409 @@
           text-transform: uppercase;
           font-size: 2.0625rem;
         }
+        a {
+          background-color: #065635;
+          color: white;
+          padding: 20px 25px;
+          display: inline-block;
+          @include buttonText;
+        }
       }
     }
   }
 }
 
-.body header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  h1 {
-    font-family: "Kumar One", cursive;
-    font-size: 1.375rem;
-    span::before {
-      content: "\A";
-      white-space: pre;
-      color: red;
+.about4 {
+  div {
+    margin: 100px auto;
+    text-align: center;
+    width: 50%;
+    h2 {
+      font-family: "Kumar One", sans-serif;
+      text-transform: uppercase;
+      font-size: 2.0625rem;
+    }
+    p {
+      font-family: "Lato", sans-serif;
+      font-size: 1.25rem;
+      width: 90%;
+      text-align: left;
+      margin: 10px auto;
+    }
+    a {
+      background-color: #065635;
+      color: white;
+      padding: 20px 25px;
+      display: inline-block;
+      @include buttonText;
     }
   }
 
-  ul {
-    display: flex;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
 
-    li {
-      list-style-type: none;
-      margin-left: 50px;
+.blog header {
+  height: 70vh;
+  background-image: url("../images/blog-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  div {
+    // width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      font-family: "Kumar One", cursive;
+      font-size: 1.375rem;
+      span::before {
+        content: "\A";
+        white-space: pre;
+        color: red;
+      }
+    }
+
+    nav {
+      ul {
+        display: flex;
+
+        li {
+          list-style-type: none;
+          margin-left: 50px;
+          a {
+            font-family: "Lato", sans-serif;
+            font-size: 1.25rem;
+            text-align: center;
+            line-height: 32px;
+            letter-spacing: 1px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  h2 {
+    margin-top: 100px;
+    font-family: "Kumar One Outline", cursive;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+}
+
+.blog main {
+  background-color: #e0fddf;
+
+  .blog-positioning {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .blog-container {
+      .inner-blog {
+        background-color: white;
+        position: relative;
+        top: -150px;
+        width: 80%;
+        box-shadow: 20px 15px #f8fb05, -20px 15px #f8fb05;
+        img {
+          box-shadow: 20px 20px #f8fb05;
+          position: relative;
+          z-index: 10;
+        }
+        div {
+          position: relative;
+          left: 5px;
+          margin: 0px 0px 0px auto;
+          padding-bottom: 20px;
+
+          background-color: white;
+          box-shadow: 10px 10px white, -500px 10px white, 10px -60px white;
+
+          h2 {
+            margin-top: 50px;
+            font-family: "Kumar One", sans-serif;
+            text-transform: uppercase;
+            font-size: 2.0625rem;
+            line-height: 58px;
+            letter-spacing: 2.1px;
+          }
+          p {
+            font-family: "Lato", sans-serif;
+            font-size: 1.25rem;
+            //   width: 90%;
+            text-align: left;
+            margin: 10px auto;
+            font-weight: lighter;
+            line-height: 32px;
+            letter-spacing: 2px;
+          }
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  .mission-box {
+    width: 30%;
+    height: auto;
+    position: relative;
+    top: -100px;
+    background-color: #f8fb05;
+    height: auto;
+    box-shadow: 20px 20px #f8fb05, -20px 20px #f8fb05;
+    h3 {
+      margin-top: 50px;
+      font-family: "Kumar One", sans-serif;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      line-height: 25px;
+      letter-spacing: 2.1px;
+    }
+    p {
+      font-family: "Lato", sans-serif;
+      font-size: 1.25rem;
+      line-height: 32px;
+      letter-spacing: 1px;
       text-decoration: none;
+      font-weight: 200;
+    }
+    ul {
+      li {
+        font-family: "Lato", sans-serif;
+        font-size: 1.25rem;
+        line-height: 32px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-weight: 200;
+      }
+    }
+  }
+  .comment-section {
+    // width: 60%;
+    h3 {
+      margin-top: 50px;
+      font-family: "Kumar One", sans-serif;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      line-height: 25px;
+      letter-spacing: 2.1px;
+    }
+    .comment1,
+    .comment2 {
+      width: 60%;
+      display: flex;
+      flex-direction: row;
+      div {
+        display: block;
+        margin: 0px;
+        .boldText {
+          font-weight: bolder;
+        }
+        p {
+          font-family: "Lato", sans-serif;
+          font-size: 1.25rem;
+          //   width: 90%;
+          text-align: left;
+          margin: 10px auto;
+          font-weight: lighter;
+          line-height: 32px;
+          letter-spacing: 2px;
+        }
+      }
+      img {
+        width: auto;
+        height: 100%;
+        margin: 20px 20px 0px 0px;
+      }
+
+      // width: 100%;
+    }
+    form {
+      width: 60%;
+      fieldset {
+        display: flex;
+        flex-direction: column;
+        border: none;
+
+        div {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          input {
+            width: 45%;
+            border: none;
+            border-bottom: 2px solid black;
+            background-color: transparent;
+            padding: 25px;
+          }
+          input::placeholder {
+            font-size: 1.25rem;
+            text-transform: uppercase;
+          }
+        }
+        textarea {
+          background-color: transparent;
+          padding: 25px;
+        }
+        textarea::placeholder {
+          font-size: 1.25rem;
+          text-transform: uppercase;
+        }
+
+        input[type="submit"] {
+          margin: 25px 0px 75px 0px;
+          background-color: #065635;
+          color: white;
+          padding: 10px 25px;
+          display: inline-block;
+          @include buttonText;
+        }
+      }
     }
   }
 }
 
-// font-family: 'Kumar One', cursive;
-// font-family: 'Kumar One Outline', cursive;
-// font-family: 'Lato', sans-serif;
+footer {
+  @import "footer";
+}
+
+.contact header {
+  height: 70vh;
+  background-image: url("../images/contact-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  div {
+    // width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      font-family: "Kumar One", cursive;
+      font-size: 1.375rem;
+      span::before {
+        content: "\A";
+        white-space: pre;
+        color: red;
+      }
+    }
+
+    nav {
+      ul {
+        display: flex;
+
+        li {
+          list-style-type: none;
+          margin-left: 50px;
+          a {
+            font-family: "Lato", sans-serif;
+            font-size: 1.25rem;
+            text-align: center;
+            line-height: 32px;
+            letter-spacing: 1px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  h2 {
+    margin-top: 100px;
+    font-family: "Kumar One Outline", cursive;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+}
+
+.contact main {
+  background-color: #e0fddf;
+
+  section {
+    // width: 6%;
+    display: flex;
+    justify-content: space-between;
+
+    form {
+      width: 70%;
+      height: 65vh;
+      background-color: white;
+      box-shadow: 20px 20px #f8fb05;
+      position: relative;
+      top: -250px;
+      fieldset {
+        display: flex;
+        flex-direction: column;
+        border: none;
+
+        div {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          input {
+            width: 45%;
+            border: none;
+            border-bottom: 2px solid black;
+            background-color: transparent;
+            padding: 25px;
+          }
+          input::placeholder {
+            font-size: 1.25rem;
+            text-transform: uppercase;
+          }
+        }
+        textarea {
+          background-color: transparent;
+          height: 40vh;
+          padding: 25px;
+        }
+        textarea::placeholder {
+          font-size: 1.25rem;
+          text-transform: uppercase;
+        }
+
+        input[type="submit"] {
+          margin: 25px 0px 75px 0px;
+          background-color: #065635;
+          color: white;
+          padding: 10px 25px;
+          display: inline-block;
+          @include buttonText;
+        }
+      }
+    }
+    .contactBox {
+      width: 250px;
+      height: 35vh;
+      //   background-color: red;
+      div {
+        width: 100%;
+        margin-top: 100px;
+        ul {
+          display: flex;
+          padding: 0px;
+
+          li {
+            font-size: 1.5rem;
+            list-style-type: none;
+            margin-right: 15px;
+            color: #065635;
+          }
+        }
+        p {
+          font-family: "Lato", sans-serif;
+          font-size: 1.25rem;
+          line-height: 32px;
+          letter-spacing: 1px;
+          text-decoration: none;
+          width: 165px;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+}

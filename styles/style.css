@@ -370,6 +370,17 @@ html {
   font-size: 1.25rem;
   width: 90%;
 }
+.home .about div a {
+  background-color: #065635;
+  color: white;
+  padding: 20px 25px;
+  display: inline-block;
+  font-family: "Kumar One", cursive;
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 .home .about img {
   -webkit-box-shadow: -20px 20px #f8fb05;
           box-shadow: -20px 20px #f8fb05;
@@ -477,6 +488,17 @@ html {
   text-transform: uppercase;
   font-size: 2.0625rem;
 }
+.about3 .parent-grid-div .inner-div1 div a {
+  background-color: #065635;
+  color: white;
+  padding: 20px 25px;
+  display: inline-block;
+  font-family: "Kumar One", cursive;
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 .about3 .parent-grid-div .inner-div2 {
   margin-left: 100px;
   display: -webkit-box;
@@ -506,33 +528,511 @@ html {
   text-transform: uppercase;
   font-size: 2.0625rem;
 }
+.about3 .parent-grid-div .inner-div2 div a {
+  background-color: #065635;
+  color: white;
+  padding: 20px 25px;
+  display: inline-block;
+  font-family: "Kumar One", cursive;
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 
-.body header {
+.about4 div {
+  margin: 100px auto;
+  text-align: center;
+  width: 50%;
+}
+.about4 div h2 {
+  font-family: "Kumar One", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.0625rem;
+}
+.about4 div p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  width: 90%;
+  text-align: left;
+  margin: 10px auto;
+}
+.about4 div a {
+  background-color: #065635;
+  color: white;
+  padding: 20px 25px;
+  display: inline-block;
+  font-family: "Kumar One", cursive;
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.about4 img {
+  width: 100%;
+  height: auto;
+}
+
+.blog header {
+  height: 70vh;
+  background-image: url("../images/blog-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blog header div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-.body header h1 {
+.blog header div h1 {
   font-family: "Kumar One", cursive;
   font-size: 1.375rem;
 }
-.body header h1 span::before {
+.blog header div h1 span::before {
   content: "\a";
   white-space: pre;
   color: red;
 }
-.body header ul {
+.blog header div nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.body header ul li {
+.blog header div nav ul li {
   list-style-type: none;
   margin-left: 50px;
+}
+.blog header div nav ul li a {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+  line-height: 32px;
+  letter-spacing: 1px;
   text-decoration: none;
+}
+.blog header h2 {
+  margin-top: 100px;
+  font-family: "Kumar One Outline", cursive;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.blog main {
+  background-color: #e0fddf;
+}
+.blog main .blog-positioning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blog main .blog-positioning .blog-container .inner-blog {
+  background-color: white;
+  position: relative;
+  top: -150px;
+  width: 80%;
+  -webkit-box-shadow: 20px 15px #f8fb05, -20px 15px #f8fb05;
+          box-shadow: 20px 15px #f8fb05, -20px 15px #f8fb05;
+}
+.blog main .blog-positioning .blog-container .inner-blog img {
+  -webkit-box-shadow: 20px 20px #f8fb05;
+          box-shadow: 20px 20px #f8fb05;
+  position: relative;
+  z-index: 10;
+}
+.blog main .blog-positioning .blog-container .inner-blog div {
+  position: relative;
+  left: 5px;
+  margin: 0px 0px 0px auto;
+  padding-bottom: 20px;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px white, -500px 10px white, 10px -60px white;
+          box-shadow: 10px 10px white, -500px 10px white, 10px -60px white;
+}
+.blog main .blog-positioning .blog-container .inner-blog div h2 {
+  margin-top: 50px;
+  font-family: "Kumar One", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.0625rem;
+  line-height: 58px;
+  letter-spacing: 2.1px;
+}
+.blog main .blog-positioning .blog-container .inner-blog div p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  text-align: left;
+  margin: 10px auto;
+  font-weight: lighter;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+.blog main .blog-positioning .blog-container .inner-blog img {
+  width: 100%;
+  height: auto;
+}
+.blog main .mission-box {
+  width: 30%;
+  height: auto;
+  position: relative;
+  top: -100px;
+  background-color: #f8fb05;
+  height: auto;
+  -webkit-box-shadow: 20px 20px #f8fb05, -20px 20px #f8fb05;
+          box-shadow: 20px 20px #f8fb05, -20px 20px #f8fb05;
+}
+.blog main .mission-box h3 {
+  margin-top: 50px;
+  font-family: "Kumar One", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 25px;
+  letter-spacing: 2.1px;
+}
+.blog main .mission-box p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 200;
+}
+.blog main .mission-box ul li {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 200;
+}
+.blog main .comment-section h3 {
+  margin-top: 50px;
+  font-family: "Kumar One", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 25px;
+  letter-spacing: 2.1px;
+}
+.blog main .comment-section .comment1,
+.blog main .comment-section .comment2 {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.blog main .comment-section .comment1 div,
+.blog main .comment-section .comment2 div {
+  display: block;
+  margin: 0px;
+}
+.blog main .comment-section .comment1 div .boldText,
+.blog main .comment-section .comment2 div .boldText {
+  font-weight: bolder;
+}
+.blog main .comment-section .comment1 div p,
+.blog main .comment-section .comment2 div p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  text-align: left;
+  margin: 10px auto;
+  font-weight: lighter;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+.blog main .comment-section .comment1 img,
+.blog main .comment-section .comment2 img {
+  width: auto;
+  height: 100%;
+  margin: 20px 20px 0px 0px;
+}
+.blog main .comment-section form {
+  width: 60%;
+}
+.blog main .comment-section form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+}
+.blog main .comment-section form fieldset div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+.blog main .comment-section form fieldset div input {
+  width: 45%;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  padding: 25px;
+}
+.blog main .comment-section form fieldset div input::-webkit-input-placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.blog main .comment-section form fieldset div input::-moz-placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.blog main .comment-section form fieldset div input:-ms-input-placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.blog main .comment-section form fieldset div input::-ms-input-placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.blog main .comment-section form fieldset div input::placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.blog main .comment-section form fieldset textarea {
+  background-color: transparent;
+  padding: 25px;
+}
+.blog main .comment-section form fieldset textarea::-webkit-input-placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.blog main .comment-section form fieldset textarea::-moz-placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.blog main .comment-section form fieldset textarea:-ms-input-placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.blog main .comment-section form fieldset textarea::-ms-input-placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.blog main .comment-section form fieldset textarea::placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.blog main .comment-section form fieldset input[type=submit] {
+  margin: 25px 0px 75px 0px;
+  background-color: #065635;
+  color: white;
+  padding: 10px 25px;
+  display: inline-block;
+  font-family: "Kumar One", cursive;
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+footer p {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin: 0px;
+}
+
+.contact header {
+  height: 70vh;
+  background-image: url("../images/contact-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact header div h1 {
+  font-family: "Kumar One", cursive;
+  font-size: 1.375rem;
+}
+.contact header div h1 span::before {
+  content: "\a";
+  white-space: pre;
+  color: red;
+}
+.contact header div nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact header div nav ul li {
+  list-style-type: none;
+  margin-left: 50px;
+}
+.contact header div nav ul li a {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.contact header h2 {
+  margin-top: 100px;
+  font-family: "Kumar One Outline", cursive;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.contact main {
+  background-color: #e0fddf;
+}
+.contact main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact main section form {
+  width: 70%;
+  height: 65vh;
+  background-color: white;
+  -webkit-box-shadow: 20px 20px #f8fb05;
+          box-shadow: 20px 20px #f8fb05;
+  position: relative;
+  top: -250px;
+}
+.contact main section form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+}
+.contact main section form fieldset div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+.contact main section form fieldset div input {
+  width: 45%;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  padding: 25px;
+}
+.contact main section form fieldset div input::-webkit-input-placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.contact main section form fieldset div input::-moz-placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.contact main section form fieldset div input:-ms-input-placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.contact main section form fieldset div input::-ms-input-placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.contact main section form fieldset div input::placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.contact main section form fieldset textarea {
+  background-color: transparent;
+  height: 40vh;
+  padding: 25px;
+}
+.contact main section form fieldset textarea::-webkit-input-placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.contact main section form fieldset textarea::-moz-placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.contact main section form fieldset textarea:-ms-input-placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.contact main section form fieldset textarea::-ms-input-placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.contact main section form fieldset textarea::placeholder {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.contact main section form fieldset input[type=submit] {
+  margin: 25px 0px 75px 0px;
+  background-color: #065635;
+  color: white;
+  padding: 10px 25px;
+  display: inline-block;
+  font-family: "Kumar One", cursive;
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.contact main section .contactBox {
+  width: 250px;
+  height: 35vh;
+}
+.contact main section .contactBox div {
+  width: 100%;
+  margin-top: 100px;
+}
+.contact main section .contactBox div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+}
+.contact main section .contactBox div ul li {
+  font-size: 1.5rem;
+  list-style-type: none;
+  margin-right: 15px;
+  color: #065635;
+}
+.contact main section .contactBox div p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  width: 165px;
+  font-weight: 200;
 }
