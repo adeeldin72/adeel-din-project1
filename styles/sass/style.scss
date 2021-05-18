@@ -1,3 +1,233 @@
-body {
-  background-color: red;
+@import "setup";
+
+.wrapper {
+  width: 80%;
+  margin: auto;
 }
+
+.home header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("../images/header-home.jpg");
+  height: 95vh;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 200px;
+
+  h1 {
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    font-family: "Kumar One Outline", cursive;
+    font-size: 4rem;
+    text-transform: uppercase;
+    span::before {
+      content: "\A";
+      white-space: pre;
+      color: red;
+    }
+  }
+  nav {
+    position: absolute;
+    right: 10%;
+    top: 0px;
+    ul {
+      display: flex;
+      li {
+        list-style-type: none;
+        margin-left: 50px;
+        font-family: "Lato", sans-serif;
+        font-size: 1.25rem;
+        text-align: center;
+        a {
+          text-transform: uppercase;
+          text-decoration: none;
+          letter-spacing: 1.4px;
+          line-height: 29px;
+        }
+      }
+    }
+  }
+}
+
+.home header::before {
+  background-image: url("../images/header-box.png");
+  content: " ";
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 40vh;
+  left: 0vw;
+}
+
+.home .about {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  div {
+    // width: 100%;
+    // margin-right: 50px;
+
+    h2 {
+      font-family: "Kumar One", sans-serif;
+      text-transform: uppercase;
+      font-size: 33px;
+    }
+    p {
+      font-family: "Lato", sans-serif;
+      font-size: 1.25rem;
+      width: 90%;
+    }
+  }
+  img {
+    box-shadow: -20px 20px #f8fb05;
+    // margin: 0px 15px;
+  }
+}
+
+.home .gallery {
+  margin-top: 40px;
+  padding: 75px 0px;
+  background-color: #e0fddf;
+  div {
+    div {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: auto;
+    }
+
+    img {
+      width: calc(100% / 3);
+      height: auto;
+      //   height: calc(100% / 3);
+    }
+    img:nth-child(2) {
+      margin: 0px 50px;
+    }
+  }
+}
+
+.about2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  div {
+    position: relative;
+    width: calc((100% - 100px) / 2);
+    margin: 25px;
+    .font-awesome-icon {
+      font-size: 33px;
+      width: 65px;
+      display: block;
+      background-color: #f8fb05;
+      border-radius: 50px;
+      padding: 15px;
+      position: absolute;
+      top: 10px;
+      left: -75px;
+    }
+    h2 {
+      font-family: "Kumar One", sans-serif;
+      text-transform: uppercase;
+      font-size: 2.0625rem;
+    }
+    p {
+      font-family: "Lato", sans-serif;
+      font-size: 1.25rem;
+      width: 90%;
+    }
+  }
+}
+
+.about3 {
+  background-color: #e0fddf;
+  .parent-grid-div {
+    position: relative;
+    width: 100%;
+    display: flex;
+
+    .inner-div1 {
+      margin-right: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      position: relative;
+      top: -50px;
+      img {
+        width: 100%;
+        height: auto;
+        box-shadow: 25px 35px #f8fb05;
+      }
+      div {
+        width: 60%;
+        text-align: end;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-family: "Lato", sans-serif;
+        font-size: 1.25rem;
+        h2 {
+          font-family: "Kumar One", sans-serif;
+          text-transform: uppercase;
+          font-size: 2.0625rem;
+        }
+      }
+    }
+    .inner-div2 {
+      margin-left: 100px;
+      display: flex;
+      flex-direction: column-reverse;
+      position: relative;
+      top: 50px;
+
+      img {
+        width: 100%;
+        height: auto;
+        box-shadow: -25px 35px #f8fb05;
+      }
+      div {
+        margin-bottom: 50px;
+        width: 60%;
+        font-family: "Lato", sans-serif;
+        font-size: 1.25rem;
+        h2 {
+          font-family: "Kumar One", sans-serif;
+          text-transform: uppercase;
+          font-size: 2.0625rem;
+        }
+      }
+    }
+  }
+}
+
+.body header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  h1 {
+    font-family: "Kumar One", cursive;
+    font-size: 1.375rem;
+    span::before {
+      content: "\A";
+      white-space: pre;
+      color: red;
+    }
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      list-style-type: none;
+      margin-left: 50px;
+      text-decoration: none;
+    }
+  }
+}
+
+// font-family: 'Kumar One', cursive;
+// font-family: 'Kumar One Outline', cursive;
+// font-family: 'Lato', sans-serif;
