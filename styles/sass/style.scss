@@ -556,12 +556,14 @@ footer {
     justify-content: space-between;
 
     form {
-      width: 70%;
-      height: 65vh;
+      width: 60vw;
+      max-width: 1000px;
+      height: auto;
+      max-height: 700px;
       background-color: white;
       box-shadow: 20px 20px #f8fb05;
       position: relative;
-      top: -250px;
+      top: -200px;
       fieldset {
         display: flex;
         flex-direction: column;
@@ -585,7 +587,7 @@ footer {
         }
         textarea {
           background-color: transparent;
-          height: 40vh;
+          height: 25vw;
           padding: 25px;
         }
         textarea::placeholder {
@@ -604,8 +606,6 @@ footer {
       }
     }
     .contactBox {
-      width: 250px;
-      height: 35vh;
       //   background-color: red;
       div {
         width: 100%;
@@ -664,6 +664,11 @@ footer {
   .home header {
     height: 80vh;
     min-height: 900px;
+  }
+
+  .contactBox {
+    /* width: 250px; */
+    margin-left: 100px;
   }
 }
 // BLOG STARTS NOW
@@ -765,6 +770,68 @@ footer {
     /* font-size: 1.25rem; */
     font-size: 1rem;
   }
+  // rererererere
+
+  section.wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactBox {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  h2.wrapper {
+    text-align: center;
+  }
+
+  div.wrapper > nav:nth-child(2) > ul:nth-child(1) {
+    display: none;
+  }
+
+  .contact header {
+    /* height: 70vh; */
+    height: 60vh;
+    min-height: 400px;
+  }
+
+  .contact main section .contactBox div p {
+    /* width: 165px; */
+    width: 100%;
+  }
+
+  .contact main section .contactBox div ul {
+    justify-content: center;
+  }
+
+  .contact main section .contactBox div {
+    /* width: 100%; */
+    /* margin-top: 100px; */
+    width: 90%;
+    margin-top: 0px;
+    margin: auto;
+  }
+
+  .contact main section form {
+    /* width: 60vw; */
+    /* top: -200px; */
+    width: 80vw;
+    top: -100px;
+  }
+
+  .contact main section form fieldset div input::placeholder {
+    /* font-size: 1.25rem; */
+    font-size: 1rem;
+  }
+
+  .contact main section form fieldset textarea::placeholder {
+    /* font-size: 1.25rem; */
+    font-size: 1rem;
+  }
+
+  // ererererer
 }
 
 @media (max-width: 800px) {
@@ -1044,6 +1111,20 @@ footer {
   .blog main .comment-section .comment2 div p {
     /* font-size: 1.25rem; */
     font-size: 1rem;
+  }
+
+  #usrForm > fieldset:nth-child(1) > div:nth-child(1) {
+    flex-direction: column;
+  }
+
+  .contact main section form fieldset div input {
+    /* width: 45%; */
+    width: 100%;
+  }
+
+  .contact header h2 {
+    /* font-size: 4rem; */
+    font-size: 3rem;
   }
 }
 @media (max-width: 590px) {
