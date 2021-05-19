@@ -925,63 +925,35 @@ footer {
 
   //   blog
 
+  .blog main .blog-positioning .blog-container .inner-blog {
+    width: 90%;
+  }
+
   .blog main {
     .blog-positioning {
       // flex-direction: column;
       display: block;
-      .blog-container {
-        .inner-blog {
-          width: 90%;
-        }
-      }
     }
     .mission-box {
       display: flex;
-      flex-direction: column;
-      width: 90%;
-      margin-left: auto;
-      margin-top: 0px;
+      flex-direction: row;
+      width: 100%;
       max-width: 1200px;
       position: static;
       height: auto;
       img {
         max-height: 300px;
-        max-width: 300px;
       }
       //   padding-bottom: 300px;
       div {
         width: 100%;
         height: 100%;
-        // margin: 0px 0px 0px 10px;
-      }
-      p {
-        // width: 85%;
+        margin: 25px;
       }
     }
   }
-
-  .blog main .comment-section .comment1,
-  .blog main .comment-section .comment2 {
-    width: 90%;
-  }
-
-  .blog main .comment-section form {
-    width: 100%;
-  }
-
-  .blog header {
-    height: 60vh;
-  }
-
-  .blog header h2 {
-    font-size: 20vw;
-    text-align: center;
-  }
-
-  div.wrapper:nth-child(1) > nav:nth-child(2) > ul:nth-child(1) {
-    display: none;
-  }
 }
+
 @media (max-width: 650px) {
   .home header nav ul {
     display: none;
@@ -1049,29 +1021,6 @@ footer {
 
   .home .about div h2 {
     margin-top: 20px;
-  }
-
-  /* style.css | file:///Users/adeeldin/Documents/Education/junoCollege/bootCamp/projects/adeel-din-project1/styles/style.css */
-
-  .blog main .comment-section form fieldset textarea {
-    /* padding: 25px; */
-  }
-
-  .blog main .comment-section form fieldset div {
-    flex-direction: column;
-  }
-
-  .blog main .comment-section form fieldset div input {
-    /* width: 45%; */
-    width: 100%;
-  }
-
-  /* Element | file:///Users/adeeldin/Documents/Education/junoCollege/bootCamp/projects/adeel-din-project1/blog.html */
-
-  #usrForm > fieldset:nth-child(1) > textarea:nth-child(3) {
-    width: 90%;
-    text-align: -moz-right;
-    margin: auto;
   }
 }
 
