@@ -1,0 +1,146 @@
+//taken from : Jelena Jovanovic : https://codepen.io/plavookac/pen/qomrMw
+
+// I have added comments below to try to show if I understand all the steps Jelena Jovanovic took to make this work
+
+#sidebarMenu {
+  height: 100vh; //
+  width: 100vw;
+  position: fixed;
+  left: 0; //default left of screen
+  // width: 250px;
+  margin-top: 0px; //margin top
+  z-index: 12; //make sure it displays over everything else
+  transform: translateX(-100vw); //move left 100vw out of the screen
+  transition: transform 250ms ease-in-out;
+  background: #e4f9f5;
+  text-align: center;
+  overflow-y: auto;
+}
+.sidebarMenuInner {
+  //used to center the inner content the buttons and stuff
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.sidebarMenuInner li {
+  list-style: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px;
+  cursor: pointer;
+  //   border-bottom: 2px solid black;
+}
+.sidebarMenuInner li span {
+  //   display: block;
+  //   font-size: 14px;
+  //   border-bottom: 4px solid black;
+  color: black;
+}
+.sidebarMenuInner li a {
+  background-color: #e0fddf;
+  border-radius: 28px;
+  border: 2px solid #000000;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+.sidebarMenuInner li a:hover {
+  background-color: #ffffff;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+  transform: translateX(0);
+}
+
+input[type="checkbox"] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+.sidebarIconToggle {
+  z-index: 30;
+  //position of the toggle
+  transition: all 0.3s; //refers to all values
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 22px;
+  right: 15px;
+  height: 22px;
+  width: 22px;
+}
+.spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: black;
+}
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+}
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 8px;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -9px;
+}
+
+// NEW THINGS I HAVE ADDED
+
+.side-bar {
+  display: block;
+}
+
+.first-section {
+  height: 60px;
+  border-bottom: none !important;
+}
+
+.side-bar-title {
+  font-family: "Kumar One Outline", cursive;
+  font-size: 2rem;
+  text-transform: uppercase;
+
+  span::before {
+    content: "\A";
+    white-space: pre;
+  }
+}
