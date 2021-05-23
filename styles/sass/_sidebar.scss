@@ -3,6 +3,7 @@
 // I have added comments below to try to show if I understand all the steps Jelena Jovanovic took to make this work
 
 #sidebarMenu {
+  //sidebar design
   height: 100vh; //
   width: 100vw;
   position: fixed;
@@ -11,10 +12,10 @@
   margin-top: 0px; //margin top
   z-index: 12; //make sure it displays over everything else
   transform: translateX(-100vw); //move left 100vw out of the screen
-  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out; //transition speed
   background: #e4f9f5;
   text-align: center;
-  overflow-y: auto;
+  overflow-y: auto; //scroll only when needed
 }
 .sidebarMenuInner {
   //used to center the inner content the buttons and stuff
@@ -23,6 +24,7 @@
   padding: 0;
 }
 .sidebarMenuInner li {
+  //color of top part of inner logo
   list-style: none;
   color: black;
   text-transform: uppercase;
@@ -32,12 +34,12 @@
   //   border-bottom: 2px solid black;
 }
 .sidebarMenuInner li span {
-  //   display: block;
-  //   font-size: 14px;
-  //   border-bottom: 4px solid black;
+  //color of bottom section of inner logo
+
   color: black;
 }
 .sidebarMenuInner li a {
+  //inner link design
   background-color: #e0fddf;
   border-radius: 28px;
   border: 2px solid #000000;
@@ -51,9 +53,11 @@
   text-shadow: 0px 1px 0px #2f6627;
 }
 .sidebarMenuInner li a:hover {
+  //change background on hover
   background-color: #ffffff;
 }
 input[type="checkbox"]:checked ~ #sidebarMenu {
+  //bring sidebar into screen
   transform: translateX(0);
 }
 
@@ -65,7 +69,7 @@ input[type="checkbox"] {
 .sidebarIconToggle {
   z-index: 30;
   //position of the toggle
-  transition: all 0.3s; //refers to all values
+  transition: all 43s; //refers to all values
   box-sizing: border-box;
   cursor: pointer;
   position: absolute;
@@ -78,7 +82,8 @@ input[type="checkbox"] {
   width: 22px;
 }
 .spinner {
-  transition: all 0.3s;
+  //used to groups all bars together
+  transition: all 4s;
   box-sizing: border-box;
   position: absolute;
   height: 3px;
@@ -86,6 +91,7 @@ input[type="checkbox"] {
   background-color: black;
 }
 .horizontal {
+  //bar close design
   transition: all 0.3s;
   box-sizing: border-box;
   position: relative;
@@ -93,12 +99,14 @@ input[type="checkbox"] {
   margin-top: 3px;
 }
 .diagonal.part-1 {
+  //bar close design
   position: relative;
   transition: all 0.3s;
   box-sizing: border-box;
   float: left;
 }
 .diagonal.part-2 {
+  //bar close design
   transition: all 0.3s;
   box-sizing: border-box;
   position: relative;
@@ -106,17 +114,23 @@ input[type="checkbox"] {
   margin-top: 3px;
 }
 input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
+  //animation
+  // middle bar that disappears when opening
   transition: all 0.3s;
   box-sizing: border-box;
   opacity: 0;
 }
 input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+  //animation
+  // top bar that rotates down to form x
   transition: all 0.3s;
   box-sizing: border-box;
   transform: rotate(135deg);
   margin-top: 8px;
 }
 input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+  //animation
+  // bottom bar rotates up to form x
   transition: all 0.3s;
   box-sizing: border-box;
   transform: rotate(-135deg);
