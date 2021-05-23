@@ -914,7 +914,6 @@ footer p {
   font-size: 4rem;
   text-transform: uppercase;
 }
-
 .contact main {
   background-color: #e0fddf;
 }
@@ -936,6 +935,7 @@ footer p {
           box-shadow: 20px 20px #f8fb05;
   position: relative;
   top: -200px;
+  left: -60px;
 }
 .contact main section form fieldset {
   display: -webkit-box;
@@ -946,6 +946,8 @@ footer p {
       -ms-flex-direction: column;
           flex-direction: column;
   border: none;
+  width: 85%;
+  margin: auto;
 }
 .contact main section form fieldset div {
   display: -webkit-box;
@@ -1020,23 +1022,23 @@ footer p {
   text-transform: uppercase;
   text-decoration: none;
 }
-.contact main section .contactBox div {
+.contact main section .contact-box div {
   width: 100%;
   margin-top: 100px;
 }
-.contact main section .contactBox div ul {
+.contact main section .contact-box div ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0px;
 }
-.contact main section .contactBox div ul li {
+.contact main section .contact-box div ul li {
   font-size: 1.5rem;
   list-style-type: none;
   margin-right: 15px;
   color: #065635;
 }
-.contact main section .contactBox div p {
+.contact main section .contact-box div p {
   font-family: "Lato", sans-serif;
   font-size: 1.25rem;
   line-height: 32px;
@@ -1047,48 +1049,47 @@ footer p {
 }
 
 @media (max-width: 1320px) {
-  .home header h1 {
-    left: 15%;
-  }
-
-  .about3 .parent-grid-div .inner-div2 {
-    margin-left: 50px;
-  }
-
-  .about3 .parent-grid-div .inner-div1 {
-    margin-right: 50px;
-  }
-
-  .home header::before {
-    width: 150vw;
-  }
-
   .home header {
     height: 80vh;
     min-height: 900px;
   }
+  .home header h1 {
+    left: 15%;
+  }
+  .home header::before {
+    width: 150vw;
+  }
+  .home .about3 .parent-grid-div .inner-div1 {
+    margin-right: 50px;
+  }
+  .home .about3 .parent-grid-div .inner-div2 {
+    margin-left: 50px;
+  }
 
-  .contactBox {
-    /* width: 250px; */
+  .contact-box {
     margin-left: 100px;
   }
 }
 @media (max-width: 1200px) {
-  .about2 div h2 {
-    width: 90%;
-  }
-
-  .about4 div {
-    width: 70%;
-  }
-
   .home .about div h2 {
     width: 90%;
   }
+  .home .about2 div h2 {
+    width: 90%;
+  }
+  .home .about4 div {
+    width: 70%;
+  }
 
   .wrapper {
-    /* width: 80%; */
     width: 90%;
+  }
+
+  .contact main section form {
+    left: 0px;
+  }
+  .contact main section form fieldset {
+    width: 100%;
   }
 }
 @media (max-width: 1100px) {
@@ -1110,94 +1111,66 @@ footer p {
     width: 90%;
   }
 
+  .home header {
+    min-height: 800px;
+  }
   .home header::before {
     width: 250vw;
   }
-
-  .about3 .parent-grid-div .inner-div2 {
-    margin-left: 25px;
-  }
-
-  .about3 .parent-grid-div .inner-div1 {
-    margin-right: 25px;
-  }
-
-  .about3 .parent-grid-div .inner-div2 div {
-    width: 70%;
-  }
-
-  .about3 .parent-grid-div .inner-div1 div {
-    width: 70%;
-  }
-
   .home .about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-
   .home .about div h2 {
     margin-top: 100px;
   }
-
-  .home header {
-    /* min-height: 900px; */
-    min-height: 800px;
-  }
-
   .home .about img {
     width: 60%;
     margin: auto;
   }
-
-  .blog main .comment-section form fieldset div input::-webkit-input-placeholder {
-    /* font-size: 1.25rem; */
-    font-size: 1rem;
+  .home .about3 .parent-grid-div .inner-div1,
+.home .about3 .parent-grid-div .inner-div2 {
+    margin-right: 25px;
   }
-
-  .blog main .comment-section form fieldset div input::-moz-placeholder {
-    /* font-size: 1.25rem; */
-    font-size: 1rem;
-  }
-
-  .blog main .comment-section form fieldset div input:-ms-input-placeholder {
-    /* font-size: 1.25rem; */
-    font-size: 1rem;
-  }
-
-  .blog main .comment-section form fieldset div input::-ms-input-placeholder {
-    /* font-size: 1.25rem; */
-    font-size: 1rem;
-  }
-
-  .blog main .comment-section form fieldset div input::placeholder {
-    /* font-size: 1.25rem; */
-    font-size: 1rem;
+  .home .about3 .parent-grid-div .inner-div1 div,
+.home .about3 .parent-grid-div .inner-div2 div {
+    width: 70%;
   }
 
   .blog main .comment-section form fieldset textarea::-webkit-input-placeholder {
-    /* font-size: 1.25rem; */
     font-size: 1rem;
   }
 
   .blog main .comment-section form fieldset textarea::-moz-placeholder {
-    /* font-size: 1.25rem; */
     font-size: 1rem;
   }
 
   .blog main .comment-section form fieldset textarea:-ms-input-placeholder {
-    /* font-size: 1.25rem; */
     font-size: 1rem;
   }
 
   .blog main .comment-section form fieldset textarea::-ms-input-placeholder {
-    /* font-size: 1.25rem; */
     font-size: 1rem;
   }
 
   .blog main .comment-section form fieldset textarea::placeholder {
-    /* font-size: 1.25rem; */
+    font-size: 1rem;
+  }
+  .blog main .comment-section form fieldset div input::-webkit-input-placeholder {
+    font-size: 1rem;
+  }
+  .blog main .comment-section form fieldset div input::-moz-placeholder {
+    font-size: 1rem;
+  }
+  .blog main .comment-section form fieldset div input:-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .blog main .comment-section form fieldset div input::-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .blog main .comment-section form fieldset div input::placeholder {
     font-size: 1rem;
   }
 
@@ -1211,100 +1184,221 @@ footer p {
             align-items: center;
   }
 
-  .contactBox {
+  .contact header {
+    height: 50vh;
+    min-height: 400px;
+  }
+  .contact main section .contact-box {
     width: 100%;
     text-align: center;
     margin: auto;
   }
-
-  h2.wrapper {
-    text-align: center;
-  }
-
-  div.wrapper > nav:nth-child(2) > ul:nth-child(1) {
-    display: none;
-  }
-
-  .contact header {
-    /* height: 70vh; */
-    height: 60vh;
-    min-height: 400px;
-  }
-
-  .contact main section .contactBox div p {
-    /* width: 165px; */
-    width: 100%;
-  }
-
-  .contact main section .contactBox div ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .contact main section .contactBox div {
-    /* width: 100%; */
-    /* margin-top: 100px; */
+  .contact main section .contact-box div {
     width: 90%;
     margin-top: 0px;
     margin: auto;
   }
-
+  .contact main section .contact-box div p {
+    width: 100%;
+  }
+  .contact main section .contact-box div ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .contact main section form {
-    /* width: 60vw; */
-    /* top: -200px; */
     width: 80vw;
     top: -100px;
   }
-
-  .contact main section form fieldset div input::-webkit-input-placeholder {
-    /* font-size: 1.25rem; */
-    font-size: 1rem;
-  }
-
-  .contact main section form fieldset div input::-moz-placeholder {
-    /* font-size: 1.25rem; */
-    font-size: 1rem;
-  }
-
-  .contact main section form fieldset div input:-ms-input-placeholder {
-    /* font-size: 1.25rem; */
-    font-size: 1rem;
-  }
-
-  .contact main section form fieldset div input::-ms-input-placeholder {
-    /* font-size: 1.25rem; */
-    font-size: 1rem;
-  }
-
-  .contact main section form fieldset div input::placeholder {
-    /* font-size: 1.25rem; */
-    font-size: 1rem;
-  }
-
   .contact main section form fieldset textarea::-webkit-input-placeholder {
-    /* font-size: 1.25rem; */
     font-size: 1rem;
   }
-
   .contact main section form fieldset textarea::-moz-placeholder {
-    /* font-size: 1.25rem; */
     font-size: 1rem;
   }
-
   .contact main section form fieldset textarea:-ms-input-placeholder {
-    /* font-size: 1.25rem; */
     font-size: 1rem;
   }
-
   .contact main section form fieldset textarea::-ms-input-placeholder {
-    /* font-size: 1.25rem; */
+    font-size: 1rem;
+  }
+  .contact main section form fieldset textarea::placeholder {
+    font-size: 1rem;
+  }
+  .contact main section form fieldset div input::-webkit-input-placeholder {
+    font-size: 1rem;
+  }
+  .contact main section form fieldset div input::-moz-placeholder {
+    font-size: 1rem;
+  }
+  .contact main section form fieldset div input:-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .contact main section form fieldset div input::-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .contact main section form fieldset div input::placeholder {
     font-size: 1rem;
   }
 
-  .contact main section form fieldset textarea::placeholder {
-    /* font-size: 1.25rem; */
-    font-size: 1rem;
+  h2.wrapper {
+    margin: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  div.wrapper:nth-child(1) nav:nth-child(2) ul:nth-child(1) {
+    display: none;
+  }
+
+  .home header {
+    margin-bottom: 100px;
+  }
+  .home header h1 {
+    left: 20vw;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .home header nav {
+    display: none;
+  }
+  .home header::before {
+    min-width: 600px;
+    top: 60vh;
+  }
+  .home .about {
+    display: grid;
+    grid-template-rows: 1.2fr 1fr;
+    grid-template-columns: 100%;
+    row-gap: 25px;
+  }
+  .home .about div h2 {
+    margin: auto;
+    text-align: center;
+  }
+  .home .about div p {
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .home .about div a {
+    margin: 25px auto;
+    display: block;
+  }
+  .home .about div:nth-child(1) {
+    grid-row-start: 2;
+  }
+  .home .about img {
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+  .home .about2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 80%;
+    grid-column-gap: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home .about2 div {
+    margin: auto;
+    width: 100%;
+  }
+  .home .about2 div p {
+    width: 100%;
+  }
+  .home .about3 .parent-grid-div {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .home .about3 .parent-grid-div .inner-div1 {
+    grid-row-start: 1;
+  }
+  .home .about3 .parent-grid-div .inner-div1 div {
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    position: absolute;
+  }
+  .home .about3 .parent-grid-div .inner-div2 {
+    grid-row-start: 2;
+  }
+  .home .about3 .parent-grid-div .inner-div2 div:nth-child(2) {
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .home .about3 .parent-grid-div .inner-div2 div {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    position: absolute;
+  }
+  .home .about4 {
+    margin-top: 100px;
+  }
+  .home .about4 div {
+    width: 90%;
+  }
+  .home .about4 img {
+    margin-top: 100px;
+  }
+  .home .gallery div img {
+    width: 90%;
+    margin: 20px;
+  }
+  .home .gallery div div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .blog header {
+    height: 60vh;
+  }
+  .blog header h2 {
+    font-size: 20vw;
+    text-align: center;
+  }
+  .blog main .blog-positioning {
+    display: block;
+  }
+  .blog main .blog-positioning .blog-container .inner-blog {
+    width: 90%;
+  }
+  .blog main .mission-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-top: 0px;
+    max-width: 1200px;
+    position: static;
+    height: auto;
+  }
+  .blog main .mission-box img {
+    max-height: 300px;
+    max-width: 300px;
+  }
+  .blog main .mission-box div {
+    width: 100%;
+    height: 100%;
+  }
+  .blog main .comment-section form {
+    width: 100%;
+  }
+  .blog main .comment-section .comment1,
+.blog main .comment-section .comment2 {
+    width: 90%;
   }
 
   #sidebarMenu {
@@ -1479,281 +1573,63 @@ footer p {
     white-space: pre;
   }
 }
-@media (max-width: 800px) {
-  .home header nav {
-    /* right: 10%; */
-    right: 0px;
-    left: 0;
-  }
-
-  .home header {
-    margin-bottom: 100px;
-  }
-
-  .home header nav ul {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding: 0px;
-  }
-
-  .home header h1 {
-    /* left: 15%; */
-    left: calc(20vw);
-  }
-
-  .home header h1 {
-    /* font-size: 4rem; */
-    font-size: 3.5rem;
-    text-align: center;
-  }
-
-  .home .gallery div div {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .home .gallery div img {
-    /* width: calc(100% / 3); */
-    width: calc(90%);
-    margin: 20px;
-  }
-
-  .about2 {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 80%;
-    grid-column-gap: 50px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .about2 div {
-    margin: auto;
-    width: 100%;
-  }
-
-  .about2 div p {
-    width: 100%;
-  }
-
-  .home .about div h2 {
-    margin: auto;
-  }
-
-  .home .about div p {
-    margin: 50px auto 0px auto;
-  }
-
-  .home .about {
-    display: grid;
-    grid-template-rows: 1.2fr 1fr;
-    grid-template-columns: 100%;
-  }
-
-  .home .about img {
-    grid-row-start: 1;
-    grid-column-start: 1;
-  }
-
-  .home header::before {
-    min-width: 600px;
-  }
-
-  .home header::before {
-    /* top: 40vh; */
-    top: 60vh;
-  }
-
-  .home .about div h2 {
-    text-align: center;
-  }
-
-  .home .about div p {
-    text-align: center;
-    margin-top: 50px;
-  }
-
-  .about3 .parent-grid-div {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-  }
-
-  .about3 .parent-grid-div .inner-div1 div {
-    z-index: 10;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 25px;
-    position: absolute;
-  }
-
-  .about3 .parent-grid-div .inner-div2 div {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 25px;
-    position: absolute;
-  }
-
-  .about4 img {
-    margin-top: 100px;
-  }
-
-  .about4 div {
-    width: 90%;
-  }
-
-  .home .about div a {
-    margin: 25px auto;
-    display: block;
-  }
-
-  .about4 {
-    margin-top: 100px;
-  }
-
-  .inner-div1 {
-    grid-row-start: 1;
-  }
-
-  .inner-div1 > div:nth-child(2) {
-    grid-row-start: 1;
-    grid-row-start: 1;
-  }
-
-  .inner-div2 {
-    grid-row-start: 2;
-  }
-
-  .inner-div2 > div:nth-child(2) {
-    grid-row-start: 2;
-    grid-row-end: 2;
-  }
-
-  .about > div:nth-child(1) {
-    grid-row-start: 2;
-  }
-
-  .blog main .blog-positioning {
-    display: block;
-  }
-  .blog main .blog-positioning .blog-container .inner-blog {
-    width: 90%;
-  }
-  .blog main .mission-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 90%;
-    margin-left: auto;
-    margin-top: 0px;
-    max-width: 1200px;
-    position: static;
-    height: auto;
-  }
-  .blog main .mission-box img {
-    max-height: 300px;
-    max-width: 300px;
-  }
-  .blog main .mission-box div {
-    width: 100%;
-    height: 100%;
-  }
-  .blog main .comment-section .comment1,
-.blog main .comment-section .comment2 {
-    width: 90%;
-  }
-
-  .blog main .comment-section form {
-    width: 100%;
-  }
-
-  .blog header {
-    height: 60vh;
-  }
-
-  .blog header h2 {
-    font-size: 20vw;
-    text-align: center;
-  }
-
-  div.wrapper:nth-child(1) > nav:nth-child(2) > ul:nth-child(1) {
-    display: none;
-  }
-}
 @media (max-width: 650px) {
-  .home header nav ul {
-    display: none;
+  #email {
+    width: 100%;
+  }
+
+  #full-name {
+    width: 100%;
   }
 
   .home header {
     margin-bottom: 200px;
   }
-
-  .home .about {
-    grid-template-rows: 1fr 1fr;
-  }
-
   .home header h1 {
-    /* font-size: 3.5rem; */
     font-size: 10vw;
     margin: auto;
     left: 0;
     right: 0;
   }
-
-  .about2 div {
-    left: 25px;
+  .home header nav ul {
+    display: none;
   }
-
-  .about3 .parent-grid-div .inner-div1 div,
-.about3 .parent-grid-div .inner-div2 div {
-    width: 100%;
+  .home .about {
+    grid-template-rows: 1fr 1fr;
   }
-
   .home .about img {
-    /* width: 60%; */
     width: 90%;
   }
-
   .home .about div h2 {
     margin-top: 50px;
   }
+  .home .about2 div {
+    left: 25px;
+  }
+  .home .about3 .parent-grid-div .inner-div1 div,
+.home .about3 .parent-grid-div .inner-div2 div {
+    width: 100%;
+  }
 
-  .blog main .blog-positioning .blog-container .inner-blog div h2 {
-    /* font-size: 2.0625rem; */
+  .blog main .blog-positioning .blog-container .inner-blog div {
     font-size: 1.75rem;
   }
-
   .blog main .blog-positioning .blog-container .inner-blog div p {
-    /* font-size: 1.25rem; */
     font-size: 1rem;
   }
-
   .blog main .mission-box p {
-    /* font-size: 1.25rem; */
     font-size: 1rem;
   }
-
   .blog main .mission-box ul li {
-    /* font-size: 1.25rem; */
     font-size: 1rem;
   }
-
   .blog main .comment-section .comment1 div p,
 .blog main .comment-section .comment2 div p {
-    /* font-size: 1.25rem; */
     font-size: 1rem;
   }
 
-  #usrForm > fieldset:nth-child(1) > div:nth-child(1) {
+  #usr-form fieldset:nth-child(1) div:nth-child(1),
+#usr-form2 fieldset:nth-child(1) div:nth-child(1) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1761,170 +1637,100 @@ footer p {
   }
 
   .contact main section form fieldset div input {
-    /* width: 45%; */
     width: 100%;
-  }
-
-  .contact header h2 {
-    /* font-size: 4rem; */
-    font-size: 3rem;
   }
 }
 @media (max-width: 590px) {
-  .about3 .parent-grid-div {
-    grid-row-gap: 100px;
-  }
-
-  .about3 .parent-grid-div .inner-div1 div {
-    position: static;
-  }
-
-  .about3 .parent-grid-div .inner-div2 div {
-    position: static;
-  }
-
-  .about3 .parent-grid-div {
-    /* grid-row-gap: 100px; */
-    grid-row-gap: 0px;
-  }
-
-  .about3 .parent-grid-div .inner-div1 div {
-    /* margin-bottom: 50px; */
-    margin-bottom: 0px;
-  }
-
-  .home .about img {
-    /* width: 60%; */
+  #usr-form fieldset:nth-child(1) textarea:nth-child(3),
+#usr-form2 fieldset:nth-child(1) textarea:nth-child(3) {
     width: 90%;
+    margin: auto;
   }
 
-  .home .about div h2 {
+  .home main .about div h2 {
     margin-top: 20px;
   }
 
-  .blog main .comment-section form fieldset div {
+  .blog header {
+    height: 70vh;
+  }
+  .blog main .comment-section .comment1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
-  .blog main .comment-section form fieldset div input {
-    /* width: 45%; */
-    width: 100%;
-  }
-
-  #usrForm > fieldset:nth-child(1) > textarea:nth-child(3) {
-    width: 90%;
-    text-align: -moz-right;
+  .blog main .comment-section .comment2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: auto;
   }
-
-  .comment2 > img:nth-child(1) {
+  .blog main .comment-section .comment2 img:nth-child(1) {
     clear: right;
   }
-
-  .comment2 {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: auto;
-  }
-
   .blog main .comment-section .comment1 img,
 .blog main .comment-section .comment2 img {
-    /* width: auto; */
     width: 50%;
-  }
-
-  .blog header {
-    /* height: 60vh; */
-    height: 70vh;
-  }
-
-  .comment1 {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    margin: auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 @media (max-width: 450px) {
+  .home header {
+    min-height: 200px;
+    height: 60vh;
+    margin-bottom: 0px;
+  }
   .home header::before {
     display: none;
   }
-
   .home .about {
     margin: 0px auto;
     grid-template-rows: 0.75fr 1fr;
   }
-
-  .wrapper {
-    /* width: 90%; */
-    width: 90%;
+  .home .about2 div {
+    left: auto;
   }
-
-  .home header {
-    /* min-height: 800px; */
-    min-height: 200px;
-  }
-
-  .home header {
-    /* height: 80vh; */
-    height: 60vh;
-  }
-
-  .home header {
-    margin-bottom: 0px;
-  }
-
-  .about2 div .font-awesome-icon {
-    /* top: 10px; */
-    /* left: -75px; */
+  .home .about2 div .font-awesome-icon {
     display: none;
   }
 
-  .about2 div {
-    left: auto;
+  .wrapper {
+    width: 90%;
   }
 }
 @media (max-width: 350px) {
-  .about3 .parent-grid-div .inner-div1 div h2 {
-    /* font-size: 2.0625rem; */
-    font-size: 1.75rem;
-  }
-
-  .about3 .parent-grid-div .inner-div2 div h2 {
-    /* font-size: 2.0625rem; */
-    font-size: 1.75rem;
+  .contact header h2 {
+    font-size: 3rem;
   }
 
   .home .about {
-    /* grid-template-rows: 1fr 1fr; */
     grid-template-rows: 0.5fr 1fr;
   }
-
-  .about > div:nth-child(1) {
-    /* height: 100p\[; */
-    /* height: 100p\[x; */
+  .home .about div h2 {
+    font-size: 1.5rem;
+  }
+  .home .about div:nth-child(1) {
     margin: 0px;
   }
-
-  .about2 div h2 {
+  .home .about2 div h2 {
     font-family: "Kumar One", sans-serif;
     text-transform: uppercase;
-    font-size: 1rem !important;
+    font-size: 1.5rem;
+  }
+  .home .about3 .parent-grid-div .inner-div1 div h2,
+.home .about3 .parent-grid-div .inner-div2 div h2 {
+    font-size: 1.75rem;
   }
 
-  .home .about div h2 {
-    font-size: 1.75rem;
+  .blog main .comment-section form fieldset input[type=submit] {
+    font-size: 1rem;
   }
 }
