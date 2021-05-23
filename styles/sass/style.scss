@@ -751,8 +751,7 @@ footer {
     }
     .about3 {
       .parent-grid-div {
-        .inner-div1,
-        .inner-div2 {
+        .inner-div1 {
           margin-right: 25px;
 
           div {
@@ -1142,6 +1141,21 @@ footer {
           }
         }
       }
+      .about3 {
+        .parent-grid-div {
+          //   grid-template-rows: 1fr 1fr 1fr 1fr;
+          .inner-div1,
+          .inner-div2 {
+            top: 0px;
+            div {
+              position: static;
+            }
+          }
+        }
+      }
+      .about4 {
+        margin-top: 0px;
+      }
     }
   }
 
@@ -1208,6 +1222,7 @@ footer {
   .contact header h2 {
     font-size: 3rem;
   }
+
   .home {
     .about {
       grid-template-rows: 0.5fr 1fr;
@@ -1234,12 +1249,20 @@ footer {
       .parent-grid-div {
         .inner-div1,
         .inner-div2 {
+          margin: auto;
+          width: 100%;
           div {
+            padding: 5px;
             h2 {
               font-size: 1.75rem;
             }
           }
         }
+      }
+    }
+    .about4 {
+      img {
+        transform: scale(2.5);
       }
     }
   }

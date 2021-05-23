@@ -1130,12 +1130,10 @@ footer p {
     width: 60%;
     margin: auto;
   }
-  .home .about3 .parent-grid-div .inner-div1,
-.home .about3 .parent-grid-div .inner-div2 {
+  .home .about3 .parent-grid-div .inner-div1 {
     margin-right: 25px;
   }
-  .home .about3 .parent-grid-div .inner-div1 div,
-.home .about3 .parent-grid-div .inner-div2 div {
+  .home .about3 .parent-grid-div .inner-div1 div {
     width: 70%;
   }
 
@@ -1650,6 +1648,17 @@ footer p {
   .home main .about div h2 {
     margin-top: 20px;
   }
+  .home main .about3 .parent-grid-div .inner-div1,
+.home main .about3 .parent-grid-div .inner-div2 {
+    top: 0px;
+  }
+  .home main .about3 .parent-grid-div .inner-div1 div,
+.home main .about3 .parent-grid-div .inner-div2 div {
+    position: static;
+  }
+  .home main .about4 {
+    margin-top: 0px;
+  }
 
   .blog header {
     height: 70vh;
@@ -1725,9 +1734,22 @@ footer p {
     text-transform: uppercase;
     font-size: 1.5rem;
   }
+  .home .about3 .parent-grid-div .inner-div1,
+.home .about3 .parent-grid-div .inner-div2 {
+    margin: auto;
+    width: 100%;
+  }
+  .home .about3 .parent-grid-div .inner-div1 div,
+.home .about3 .parent-grid-div .inner-div2 div {
+    padding: 5px;
+  }
   .home .about3 .parent-grid-div .inner-div1 div h2,
 .home .about3 .parent-grid-div .inner-div2 div h2 {
     font-size: 1.75rem;
+  }
+  .home .about4 img {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
   }
 
   .blog main .comment-section form fieldset input[type=submit] {
