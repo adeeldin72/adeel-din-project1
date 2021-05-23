@@ -122,22 +122,29 @@ $dark-green: #065635;
   padding: 75px 0px;
   background-color: $light-green;
   div {
-    div {
+    ul {
+      padding: 0px;
       display: flex;
-      justify-content: center;
-      width: 100%;
-      margin: auto;
-    }
-
-    img {
-      width: calc(100% / 3);
-      height: auto;
-      //   height: calc(100% / 3);
-    }
-    img:nth-child(2) {
-      margin: 0px 50px;
+      justify-content: space-between;
+      li {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        width: calc(100% / 3.25);
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
   }
+
+  //   div {
+  //     display: flex;
+  //     justify-content: center;
+  //     width: 100%;
+  //     margin: auto;
+  //   }
 }
 
 .about2 {
@@ -959,14 +966,20 @@ footer {
     }
 
     .gallery {
+      margin-top: 40px;
       div {
-        img {
-          width: 90%;
-          margin: 20px;
-        }
-        div {
+        ul {
           flex-direction: column;
           align-items: center;
+          li {
+            margin: 25px 0px;
+            list-style: none;
+            width: 90%;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
         }
       }
     }
