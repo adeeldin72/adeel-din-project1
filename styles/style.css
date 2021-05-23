@@ -337,6 +337,17 @@ html {
   text-decoration: none;
   letter-spacing: 1.4px;
   line-height: 29px;
+  color: black;
+}
+.home header nav ul li a:visited {
+  color: black;
+}
+.home header nav ul li a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #f8fb05;
+          text-decoration-color: #f8fb05;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 5px;
 }
 
 .home header::before {
@@ -616,6 +627,16 @@ html {
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
+}
+.blog header div nav ul li a:visited {
+  color: black;
+}
+.blog header div nav ul li a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #f8fb05;
+          text-decoration-color: #f8fb05;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 5px;
 }
 .blog header h2 {
   margin-top: 100px;
@@ -907,6 +928,16 @@ footer p {
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
+}
+.contact header div nav ul li a:visited {
+  color: black;
+}
+.contact header div nav ul li a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #f8fb05;
+          text-decoration-color: #f8fb05;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 5px;
 }
 .contact header h2 {
   margin-top: 100px;
