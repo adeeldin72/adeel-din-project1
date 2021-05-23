@@ -1130,6 +1130,22 @@ footer p {
     width: 60%;
     margin: auto;
   }
+  .home .about2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 80%;
+    grid-column-gap: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home .about2 div {
+    margin: auto;
+    width: 100%;
+  }
+  .home .about2 div p {
+    width: 100%;
+  }
   .home .about3 .parent-grid-div .inner-div1 {
     margin-right: 25px;
   }
@@ -1289,22 +1305,6 @@ footer p {
   .home .about img {
     grid-row-start: 1;
     grid-column-start: 1;
-  }
-  .home .about2 {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 80%;
-    grid-column-gap: 50px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .home .about2 div {
-    margin: auto;
-    width: 100%;
-  }
-  .home .about2 div p {
-    width: 100%;
   }
   .home .about3 .parent-grid-div {
     display: grid;
@@ -1746,6 +1746,9 @@ footer p {
   .home .about3 .parent-grid-div .inner-div1 div h2,
 .home .about3 .parent-grid-div .inner-div2 div h2 {
     font-size: 1.75rem;
+  }
+  .home .about4 {
+    overflow-x: hidden;
   }
   .home .about4 img {
     -webkit-transform: scale(2.5);
