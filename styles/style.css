@@ -836,6 +836,7 @@ html {
   text-transform: uppercase;
 }
 .blog main .comment-section form fieldset textarea {
+  width: 100%;
   background-color: transparent;
   padding: 25px;
 }
@@ -1017,6 +1018,7 @@ footer p {
   text-transform: uppercase;
 }
 .contact main section form fieldset textarea {
+  width: 100%;
   background-color: transparent;
   height: 25vw;
   padding: 25px;
@@ -1657,8 +1659,8 @@ footer p {
     font-size: 1rem;
   }
 
-  #usr-form fieldset:nth-child(1) div:nth-child(1),
-#usr-form2 fieldset:nth-child(1) div:nth-child(1) {
+  #usr-form fieldset div,
+#usr-form2 fieldset div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1786,6 +1788,11 @@ footer p {
             transform: scale(2.5);
   }
 
+  .blog main .comment-section form fieldset legend {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .blog main .comment-section form fieldset input[type=submit] {
     font-size: 1rem;
   }

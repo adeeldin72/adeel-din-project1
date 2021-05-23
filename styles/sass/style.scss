@@ -485,6 +485,7 @@ $dark-green: #065635;
           }
         }
         textarea {
+          width: 100%;
           background-color: transparent;
           padding: 25px;
         }
@@ -604,6 +605,7 @@ footer {
             }
           }
           textarea {
+            width: 100%;
             background-color: transparent;
             height: 25vw;
             padding: 25px;
@@ -1113,8 +1115,8 @@ footer {
 
   #usr-form,
   #usr-form2 {
-    fieldset:nth-child(1) {
-      div:nth-child(1) {
+    fieldset {
+      div {
         flex-direction: column;
       }
     }
@@ -1288,6 +1290,9 @@ footer {
       .comment-section {
         form {
           fieldset {
+            legend {
+              display: flex;
+            }
             input[type="submit"] {
               font-size: 1rem;
             }
