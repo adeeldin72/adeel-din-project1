@@ -1083,6 +1083,49 @@ footer p {
   font-weight: 200;
 }
 
+.hide {
+  display: none;
+}
+
+.hamburgerMenu {
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+  position: fixed;
+  background-color: #e0fddf;
+  color: red;
+}
+.hamburgerMenu ul {
+  position: fixed;
+  /* or absolute */
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  list-style-type: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 0px;
+}
+.hamburgerMenu ul li {
+  font-size: calc(5vw + 20px);
+}
+.hamburgerMenu ul .linkStyle {
+  font-size: calc(2.5vw + 20px);
+  margin: 25px;
+  border: 4px solid black;
+  border-radius: 50px;
+  padding: calc(1vw + 25px);
+  background-color: white;
+}
+.hamburgerMenu ul .linkStyle .side-bar-title {
+  background-color: none;
+}
+.hamburgerMenu ul .linkStyle a {
+  text-decoration: none;
+  color: red;
+}
+
 @media (max-width: 1320px) {
   .home header {
     height: 80vh;
@@ -1440,61 +1483,6 @@ footer p {
   .blog main .comment-section .comment1,
 .blog main .comment-section .comment2 {
     width: 90%;
-  }
-
-  #sidebarMenu {
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    left: 0;
-    margin-top: 0px;
-    z-index: 12;
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw);
-    -webkit-transition: -webkit-transform 250ms ease-in-out;
-    transition: -webkit-transform 250ms ease-in-out;
-    transition: transform 250ms ease-in-out;
-    transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
-    background: #e4f9f5;
-    text-align: center;
-    overflow-y: auto;
-  }
-
-  .sidebarMenuInner {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .sidebarMenuInner li {
-    list-style: none;
-    color: black;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 20px;
-    cursor: pointer;
-  }
-
-  .sidebarMenuInner li span {
-    color: black;
-  }
-
-  .sidebarMenuInner li a {
-    background-color: #e0fddf;
-    border-radius: 28px;
-    border: 2px solid #000000;
-    display: inline-block;
-    cursor: pointer;
-    color: #000000;
-    font-family: Arial;
-    font-size: 20px;
-    padding: 16px 31px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #2f6627;
-  }
-
-  .sidebarMenuInner li a:hover {
-    background-color: #ffffff;
   }
 
   input[type=checkbox]:checked ~ #sidebarMenu {
