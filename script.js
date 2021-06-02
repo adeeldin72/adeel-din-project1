@@ -1,12 +1,12 @@
 //namespace
 const app = {};
 
-//init function
+
 
 //run once the DOM is loaded
 document.addEventListener("DOMContentLoaded", function () {
 
-    app.init = function () {
+    app.init = function () { //init function
         document.querySelector('.hamburgerMenu').classList.add('hide');
         app.addPageListeners();
     }
